@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Success Classes of Engineering</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/3w0wgHR1/android-chrome-192x192.png" type="image/png">
+    
+    <!-- Add Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('main.index')  }}">
+            <h3>Success Classes of Engineering</h3>
+        </a>
+        <nav>
+            <a href="{{ url_for('main.about') }}">Contact Us</a>
+            
+        </nav>
+    </header>
+    <div class="Contact_Us">
+        <div class="phone">
+            <p>Contact Us :
+                <img src="https://i.postimg.cc/bY4GYh0q/telephone-724664.png" alt="logo" class="imgtag">
+                <img src="https://i.postimg.cc/MKNWpZmm/whatsapp-3536445.png" alt="logo" class="imgtag">
+            </p>
+            <p class="numbers">123-xxx-xxxx</p>
+            <p class="numbers">354-xxx-xxxx</p>
+        </div>
+    </div>
+    <div class="main_our_class">
+    <div class="Our_class">
+        <!-- Add the slider -->
+        <p>Our Classrooms</p>
+        <div class="slider">
+            <div><img src="https://img.freepik.com/premium-photo/technology-classroom-students-school-using-computers-erducation-process-cartoon-style-neural-network-generated-image_636705-11759.jpg" alt="Image 1"></div>
+            <div><img src="https://img.freepik.com/premium-photo/technology-classroom-students-school-using-computers-erducation-process-cartoon-style-neural-network-generated-image_636705-11759.jpg" alt="Image 2"></div>
+            <div><img src="https://img.freepik.com/premium-photo/technology-classroom-students-school-using-computers-erducation-process-cartoon-style-neural-network-generated-image_636705-11759.jpg" alt="Image 3"></div>
+            <!-- Add more images as needed -->
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="location">
+        <p class="location-description">Our classes are conveniently located at the following address:</p>
+        <p class="location-address">2nd Floor, Aai building, Kelkar Rd, above Tanishq Jewellery Shop, Ramnagar, Dombivli East, Dombivli, Maharashtra 421201</p>
+        <p class="location-description">You can also find us on Google Maps:</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.4709010376087!2d73.0865181315455!3d19.215527343512054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf8ef903c863%3A0x5d0029fa4c66147c!2sSuccess%20Classes%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1717399947937!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Success Classes of Engineering. All rights reserved.</p>
+        <p class="sutar">Developed by Sutar</p>
+    </footer>
+    <!-- Add jQuery (required by Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add Slick Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Initialize Slick Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+                infinite: true
+            });
+        });
+    </script>
+</body>
+</html>

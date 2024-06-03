@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Classes of Engineering</title>
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="https://i.postimg.cc/3w0wgHR1/android-chrome-192x192.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('main.index')  }}">
+            <h3>Success Classes of Engineering</h3>
+        </a>
+        <nav>
+            <a href="{{ url_for('main.about') }}">Contact Us</a>
+           
+        </nav>
+    </header>
+    <div class="hero">
+        <img src="https://i.postimg.cc/4dQmnkXy/Add-a-subheading-removebg-preview.png" alt="Description" class="hero-image">
+        <div class="hero-content">
+            <h1>Amar sir hai toh mumkin hai !!</h1>
+            <p>Aa jao sikha dunga !!</p>
+            <p class="prof_name">A.B.Chaudhary's</p>
+        </div>
+       
+    </div>
+    
+    <div class="container">
+        <section class="achievers">
+            <h2>Our Achievers</h2>
+            <div class="grid">
+                <!-- Repeat these divs for each achiever -->
+                <div class="achiever-card">
+                    <img src="https://i.postimg.cc/rwqhFpHW/Untitled-design.png" alt="Achiever">
+                    <p class="name">Name : ABC </p>
+                    <p class="pointer">Pointer : 9.0</p>
+                </div>
+                <!-- Repeat this structure for each card -->
+                <div class="achiever-card">
+                    <img src="https://i.postimg.cc/rwqhFpHW/Untitled-design.png" alt="Achiever">
+                    <p class="name">Name : ABC</p>
+                    <p class="details">Pointer : 9.0</p>
+                </div>
+                <div class="achiever-card">
+                    <img src="https://i.postimg.cc/rwqhFpHW/Untitled-design.png" alt="Achiever">
+                    <p class="name">Name : ABC</p>
+                    <p class="details">Pointer : 9.0</p>
+                </div>
+                <!-- Repeat end -->
+    </div>
+            <button class="view_more">View More</button>
+        </section>
+        <section class="demo-lectures">
+            <h2>Our Demo Lectures</h2>
+            <div class="grid">
+                <div class="deom-vid">
+                    <iframe class="rounded-video" width="718" height="424" src="https://www.youtube.com/embed/OWfoGhHXwT4?si=4WNCPtCrcJGCnNzS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="deom-vid">
+                    <iframe class="rounded-video" width="718" height="424" src="https://www.youtube.com/embed/7Y_69ts7naQ?si=51Qwm9dmJD-QxHaq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="courses">
+            <h2>Our Courses</h2>
+            <div class="grid">
+                <div class="course_info">
+                    <h3>1st Semester</h3>
+                    <p>Maths 1</p>
+                    <p>BEE</p>
+                    <p>Mechanics</p>
+                    <button class="Check_here">Check here</button>
+                </div>
+                <div class="course_info">
+                    <h3>2nd Semester</h3>
+                    <p>Maths 2</p>
+                    <p>Physics 2</p>
+                    <p>Engg. graphics</p>
+                    <button class="Check_here">Check here</button>
+                </div>
+                <div class="course_info">
+                    <h3>3rd Semester</h3>
+                    <p>Maths 3</p>
+                    <p>Data Structures</p>
+                    <button class="Check_here">Check here</button>
+                </div>
+                <div class="course_info">
+                    <h3>4th Semester</h3>
+                    <p>Maths 4</p>
+                    <button class="Check_here">Check here</button>
+                </div>
+            </div>
+        </section>
+        <section class="join-us">
+            <h2>Join Us !!</h2>
+            <p>Ready to conquer the world of engineering? Leverage the power of Success Classes of Engineering and craft your path to success!</p>
+            <button class="Register">Register</button>
+        </section>
+        <section class="faq">
+            <div>
+                <h3>Get Questions ?</h3>
+                <li>How can I register for a class?</li>
+                <p> Just click on the “Register Now” button and fill the simple form. Welcome aboard!</p>
+                
+            </div>
+            <div>
+                <h3>FAQs</h3>
+                <li>Do you offer online courses?</li>
+                <p>Absolutely! We understand the needs of every student. Benefit from our quality education from the comfort of your home.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Success Classes of Engineering. All rights reserved.</p>
+        <p class="sutar">Developed by Sutar</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,436 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5badaa;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    background-color: #1E3B41;
+}
+
+header h3 {
+   padding-left: 30px;
+   
+   font-size: 22px;
+   color: white;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding-right: 9px;
+    font-size: large;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: #18766A;
+    padding: 20px;
+    padding-left: 90px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.hero p {
+    font-size: xx-large;
+}
+
+.hero-image {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+.hero-content {
+    flex: 1;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.prof_name {
+    padding-top: 40px;
+    font-size: 15px;
+    text-align: end;
+    padding-right: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+    .prof_name {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-right: 5px;
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .prof_name {
+        font-size: 14px;
+        padding-top: 30px;
+        padding-right: 8px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .prof_name {
+        font-size: 16px;
+        padding-top: 35px;
+        padding-right: 10px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+    .prof_name {
+        font-size: 18px;
+        padding-top: 40px;
+        padding-right: 15px;
+    }
+}
+
+
+
+.deom-vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.rounded-video {
+    border-radius: 10px; /* Adjust the radius as needed */
+    overflow: hidden; /* Ensure content stays within the rounded corners */
+    width: 100%; /* Make the width responsive */
+    max-width: 718px; /* Ensure it doesn't exceed the container width */
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .rounded-video {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .rounded-video {
+        width: 90%;
+    }
+}
+
+@media (max-width: 980px) {
+    .rounded-video {
+        width: 100%;
+    }
+}
+
+
+.achievers, .demo-lectures, .courses, .join-us, .faq {
+    margin-bottom: 50px;
+}
+
+.achievers h2 , .demo-lectures h2 , .courses h2 {
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+}
+
+.achiever-card {
+    background-color: #C1BAC1;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px;
+    margin: 4px 0;
+    display: inline-block;
+}
+
+.achiever-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.achiever-card p  {
+    margin: 0;
+    font-size: large;
+    font-weight: 300;
+    color: black;
+}
+
+.achiever-card .name {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.achiever-card .pointer {
+    font-size: medium;
+    font-weight: 300;
+    color: black;
+}
+
+.view_more {
+    text-align: center;
+}
+
+.view_more , .Check_here{
+    background-color: #00796b; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 90px; /* Padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: large; /* Larger font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Space between letters */
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.view_more , .Check_here :hover {
+    background-color: #005f56; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.view_more , .Check_here :active {
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+.view_more , .Check_here :focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 107, 0.5); /* Custom focus outline */
+}
+
+
+.achievers .grid, .courses .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.achievers .grid div, .courses .grid div {
+    background: #C1BAC1;
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.demo-lectures .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.demo-lectures .grid div {
+    width: 30%;
+    text-align: center;
+}
+
+.course_info {
+    font-size: larger;
+    color: black;
+    font-weight: 500;
+}
+
+.course_info h3{
+    font-size: xx-large;
+    color: black;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.join-us {
+    text-align: center;
+    background-color: #1E3B41;
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    max-width: 100%;    /* Ensure the div takes up the full width of its container */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    margin: 0 auto; /* Center align the content horizontally */
+    border-radius: 10px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .join-us {
+        padding: 50px 100px; /* Adjust padding for medium screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .join-us {
+        padding: 50px 200px; /* Adjust padding for large screens */
+    }
+}
+
+
+.join-us h3 {
+    font-size: 70px;
+}
+
+.join-us p {
+    font-size: 20px;
+}
+
+.join-us button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+
+.faq{
+    background-color: #f0f0f0; /* Change this color to whatever you prefer */
+    padding: 20px; /* Optional: Add some padding for better spacing */
+    margin-top: 20px;
+    font-size: large;
+    color: #1E3B41;
+    border-radius: 10px;
+
+}
+
+ .faq p , .faq li {
+    color: #1E3B41;
+    font-weight: bold;
+    font-size: large;
+ }
+
+ .faq p {
+    padding-left: 15px;
+ }
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #003d33;
+}
+
+.sutar{
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .hero {
+        padding-left: 50px;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+    }
+
+    .achievers .grid div, .courses .grid div {
+        width: 45%;
+    }
+
+    .demo-lectures .grid div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h3 {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .hero-image {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .hero-content {
+        padding-left: 0;
+    }
+
+    .achievers .grid div, .courses .grid div {
+        width: 100%;
+    }
+
+    .view_more{
+        text-align: center;
+    }
+    .demo-lectures .grid div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    header nav a {
+        font-size: medium;
+    }
+
+    .hero-content {
+        font-size: medium;
+    }
+
+    .join-us button {
+        padding: 8px 16px;
+        font-size: medium;
+    }
+}

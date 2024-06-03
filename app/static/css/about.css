@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5badaa;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    background-color: #1E3B41;
+}
+
+header h3 {
+   padding-left: 30px;
+   font-size: 22px;
+   color: white;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding-right: 9px;
+    font-size: large;
+}
+
+/* External CSS File (e.g., style.css) */
+
+.location {
+    margin-top: 20px;
+    margin: 20px 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.location-description {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.location-address {
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    border: 15px;
+}
+
+/* External CSS File (e.g., style.css) */
+
+.Contact_Us {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.phone p {
+    font-size: 20px;
+    color: #1E3B41;
+    margin: 10px 0;
+}
+
+.phone p:first-child {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.numbers {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1E3B41;
+    padding-left: 100px;
+    padding-top: 10px;
+    
+}
+
+.phone p:not(:first-child) {
+    color: #555;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .Contact_Us {
+        padding: 10px;
+    }
+
+    .phone p:first-child {
+        font-size: 20px;
+    }
+
+    .phone p {
+        font-size: 16px;
+    }
+
+    .numbers {
+        font-size: 14px;
+        text-align: end;
+        padding-right: 10px;
+    }
+}
+
+.imgtag {
+    width: 20px; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+/* External CSS File (e.g., style.css) */
+
+.main_our_class {
+    text-align: center; /* Align the content (slider) within the container to the center */
+}
+
+.Our_class {
+    margin: 20px 20px; /* Add margin on top and bottom, and auto margin on left and right for centering */
+    max-width: 80%; /* Ensure the slider doesn't exceed the width of its container */
+    padding: 20px 70px;
+    background-color: #18766A;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.Our_class p{
+    padding-top: 5px;
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+
+.slider {
+    text-align: center; /* Align the content (images) within the slider container to the center */
+    padding-bottom: 10px;
+}
+
+
+
+.slider img {
+    width: 50%; /* Set the image width to 100% of its container */
+    height: auto; /* Allow the image height to adjust proportionally */
+    border-radius: 10px; /* Apply a border radius of 10px */
+    background-color: #C1BAC1;
+    display: inline-block;
+    text-align: center;
+
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .Our_class {
+        padding: 0 20px; /* Add padding of 20px on both sides for smaller screens */
+    }
+
+    .slider img {
+        max-width: 60%; /* Make sure images don't overflow their containers */
+        height: auto; /* Allow images to maintain their aspect ratio */
+        margin: 20px 20px;
+       
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #003d33;
+}
