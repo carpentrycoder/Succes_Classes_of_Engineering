@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topper of Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link href="{{ url_for('static', filename='css/toppers.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/3w0wgHR1/android-chrome-192x192.png" type="image/png">
+      <!-- Add Slick Carousel CSS -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('main.index')  }}">
+            <h3>Success Classes of Engineering</h3>
+        </a>
+        <nav>
+            <a href="{{ url_for('main.about') }}">Contact Us</a>
+        </nav>
+    </header>
+    <div class="conatainer">
+        <section class="achievers">
+            <h2>Our Achievers</h2>
+            <div class="grid">
+                <!-- Repeat these divs for each achiever -->
+                <div class="achiever-card">
+                    <img src="https://i.postimg.cc/rwqhFpHW/Untitled-design.png" alt="Achiever">
+                    <div class="achiever_ptag">
+                    <p class="name">Name : ABC </p>
+                    <p class="pointer">Pointer : 9.0</p>
+                </div>
+                </div>
+                <!-- Repeat end -->
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Success Classes of Engineering. All rights reserved.</p>
+        <p class="sutar">Developed by Sutar</p>
+    </footer>
+</body>
+</html>

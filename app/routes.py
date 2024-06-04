@@ -9,3 +9,9 @@ def index():
 @bp.route('/about')
 def about():
     return render_template('about.html')
+
+@bp.route('/toppers')
+def toppers():
+    return render_template('toppers.html')
+
+

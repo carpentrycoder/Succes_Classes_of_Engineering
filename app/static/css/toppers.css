@@ -1,0 +1,122 @@
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5badaa;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal; /* corrected font-weight */
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    background-color: #1E3B41;
+}
+
+header h3 {
+   padding-left: 30px;
+   
+   font-size: 22px;
+   color: white;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding-right: 9px;
+    font-size: large;
+}
+
+.achievers{
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.achievers h2  {
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+}
+
+.achiever-card {
+    background-color: #18766A;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px;
+    padding-top: 20px;
+    margin: 10px; /* added for better spacing between cards */
+    
+}
+
+.achiever_ptag {
+    padding-top: 10px;
+}
+
+
+.achiever-card img {
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    aspect-ratio: 3/4;
+}
+.achiever-card p  {
+    margin: 0;
+    font-size: 30px; /* changed to a more reasonable size */
+    font-weight: 300;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.achiever-card .name {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.achiever-card .pointer {
+    font-size: 22px; /* changed to a more reasonable size */
+    font-weight: 800;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #003d33;
+}
+
+.sutar{
+    font-size: 14px;
+}
+
+/* added responsive styles */
+@media (min-width: 769px) { /* added for desktop display only */
+    .achiever-card {
+        width: 250px; /* set width for desktop display */
+        height: 300px; /* set height for desktop display */
+    }
+}
+
+@media (min-width: 480px) { /* added for phone display only */
+    .achiever-card {
+        width: 250px; /* set width for desktop display */
+        height: 350px; /* set height for desktop display */
+        
+    }
+}
+
+@media (max-width: 768px) {
+    header h3, header nav a {
+        font-size: 16px;
+    }
+}
