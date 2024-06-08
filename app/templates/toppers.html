@@ -23,19 +23,19 @@
             <a href="{{ url_for('main.about') }}">Contact Us</a>
         </nav>
     </header>
-    <div class="conatainer">
+    <div class="container">
         <section class="achievers">
             <h2>Our Achievers</h2>
             <div class="grid">
-                <!-- Repeat these divs for each achiever -->
+                {% for achiever in toppers %}
                 <div class="achiever-card">
-                    <img src="https://i.postimg.cc/rwqhFpHW/Untitled-design.png" alt="Achiever">
+                    <img src="{{ achiever['image_url'] }}" alt="Achiever">
                     <div class="achiever_ptag">
-                    <p class="name">Name : ABC </p>
-                    <p class="pointer">Pointer : 9.0</p>
+                        <p class="name">Name: {{ achiever['name'] }}</p>
+                        <p class="pointer">Pointer: {{ achiever['pointer'] }}</p>
+                    </div>
                 </div>
-                </div>
-                <!-- Repeat end -->
+                {% endfor %}
             </div>
         </section>
     </div>

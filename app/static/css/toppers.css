@@ -1,13 +1,12 @@
 /* Basic styling for body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "League Spartan", sans-serif;
     background-color: #5badaa;
     color: #fff;
     margin: 0;
     padding: 0;
-    font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal; /* corrected font-weight */
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -15,15 +14,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 0;
+    padding: 7px 20px; /* added padding for better spacing */
     background-color: #1E3B41;
 }
 
 header h3 {
-   padding-left: 30px;
-   
-   font-size: 22px;
-   color: white;
+    font-size: 22px;
+    color: white;
 }
 
 header nav {
@@ -34,35 +31,41 @@ header nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
-    padding-right: 9px;
     font-size: large;
 }
 
-.achievers{
-    margin-bottom: 50px;
+.achievers {
+    margin: 50px 20px; /* added margin for better spacing */
     padding-left: 20px;
 }
 
-.achievers h2  {
+.achievers h2 {
     font-size: 30px;
     color: black;
     text-decoration: underline;
+    text-align: center; /* centered heading */
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centered achiever cards */
+    gap: 20px; /* added gap between cards */
 }
 
 .achiever-card {
     background-color: #18766A;
     border-radius: 10px;
     text-align: center;
-    padding: 0px;
     padding-top: 20px;
-    margin: 10px; /* added for better spacing between cards */
-    
+    margin: 10px;
+    width: 100%; /* full width on small screens */
+    max-width: 250px; /* max width for larger screens */
 }
 
 .achiever_ptag {
     padding-top: 10px;
 }
-
 
 .achiever-card img {
     width: 75%;
@@ -70,9 +73,10 @@ header nav a {
     border-radius: 5px;
     aspect-ratio: 3/4;
 }
-.achiever-card p  {
+
+.achiever-card p {
     margin: 0;
-    font-size: 30px; /* changed to a more reasonable size */
+    font-size: 20px; /* adjusted font size for readability */
     font-weight: 300;
     color: black;
     padding-bottom: 10px;
@@ -84,7 +88,7 @@ header nav a {
 }
 
 .achiever-card .pointer {
-    font-size: 22px; /* changed to a more reasonable size */
+    font-size: 18px; /* adjusted font size for readability */
     font-weight: 800;
     color: black;
 }
@@ -95,28 +99,44 @@ footer {
     background: #003d33;
 }
 
-.sutar{
+.sutar {
     font-size: 14px;
 }
 
-/* added responsive styles */
-@media (min-width: 769px) { /* added for desktop display only */
-    .achiever-card {
-        width: 250px; /* set width for desktop display */
-        height: 300px; /* set height for desktop display */
-    }
-}
-
-@media (min-width: 480px) { /* added for phone display only */
-    .achiever-card {
-        width: 250px; /* set width for desktop display */
-        height: 350px; /* set height for desktop display */
-        
-    }
-}
-
+/* Responsive styles */
 @media (max-width: 768px) {
     header h3, header nav a {
         font-size: 16px;
+    }
+
+    .achievers h2 {
+        font-size: 24px;
+    }
+
+    .achiever-card {
+        max-width: 100%; /* full width on small screens */
+        margin: 0 auto 20px; /* center cards on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h3 {
+        font-size: 18px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .achievers h2 {
+        font-size: 20px;
+    }
+
+    .achiever-card p {
+        font-size: 18px; /* adjusted font size for smaller screens */
+    }
+
+    .achiever-card .pointer {
+        font-size: 16px; /* adjusted font size for smaller screens */
     }
 }
