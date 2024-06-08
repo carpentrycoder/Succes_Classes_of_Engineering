@@ -34,24 +34,14 @@
         <section class="achievers">
             <h2>Our Achievers</h2>
             <div class="grid">
-                <!-- Repeat these divs for each achiever -->
+                {% for achiever in toppers %}
                 <div class="achiever-card">
-                    <img src="https://i.postimg.cc/rwqhFpHW/Untitled-design.png" alt="Achiever">
-                    <p class="name">Name : ABC </p>
-                    <p class="pointer">Pointer : 9.0</p>
+                    <img src="{{ achiever['image_url'] | default('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png') }}" alt="Achiever">
+                    
+                    <p class="name"> {{ achiever['name'] }}</p>
+                    <p class="pointer">Pointer: {{ achiever['pointer'] }}</p>
                 </div>
-                <!-- Repeat this structure for each card -->
-                <div class="achiever-card">
-                    <img src="https://i.postimg.cc/rwqhFpHW/Untitled-design.png" alt="Achiever">
-                    <p class="name">Name : ABC</p>
-                    <p class="details">Pointer : 9.0</p>
-                </div>
-                <div class="achiever-card">
-                    <img src="https://i.postimg.cc/rwqhFpHW/Untitled-design.png" alt="Achiever">
-                    <p class="name">Name : ABC</p>
-                    <p class="details">Pointer : 9.0</p>
-                </div>
-                <!-- Repeat end -->
+                {% endfor %}
             </div>
             <a href="{{ url_for('main.toppers') }}">
                 <button type="submit" class="view_more">View More</button>

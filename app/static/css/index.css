@@ -43,6 +43,68 @@ header nav a {
     font-size: large;
 }
 
+.achiever-card {
+    background-color: #C1BAC1;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px; /* Add padding for spacing */
+    margin: 20px 0; /* Add margin for spacing */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.achiever-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Ensure circular image */
+}
+
+.achiever-card .name {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px; /* Add some space between image and name */
+}
+
+.achiever-card .pointer {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px; /* Add some space between name and pointer */
+    color: black;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .achiever-card {
+        width: 100%; /* Make the card full-width for smaller screens */
+    }
+
+    .achiever-card img {
+        border-radius: 10px; /* Adjust border-radius for smaller screens */
+    }
+
+    .achiever-card .achiever_ptag {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .achiever-card p  {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .achiever-card .name {
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+
+    .achiever-card .pointer {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
 .hero {
     display: flex;
     align-items: center;
