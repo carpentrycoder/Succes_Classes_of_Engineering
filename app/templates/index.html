@@ -6,9 +6,9 @@
     <title>Success Classes of Engineering</title>
     <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-<link rel="icon" href="https://i.postimg.cc/3w0wgHR1/android-chrome-192x192.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/3w0wgHR1/android-chrome-192x192.png" type="image/png">
 </head>
 <body>
     <header>
@@ -17,7 +17,6 @@
         </a>
         <nav>
             <a href="{{ url_for('main.about') }}">Contact Us</a>
-           
         </nav>
     </header>
     <div class="hero">
@@ -27,7 +26,6 @@
             <p>Aa jao sikha dunga !!</p>
             <p class="prof_name">A.B.Chaudhary's</p>
         </div>
-       
     </div>
     
     <div class="container">
@@ -37,7 +35,6 @@
                 {% for achiever in toppers %}
                 <div class="achiever-card">
                     <img src="{{ achiever['image_url'] | default('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png') }}" alt="Achiever">
-                    
                     <p class="name"> {{ achiever['name'] }}</p>
                     <p class="pointer">Pointer: {{ achiever['pointer'] }}</p>
                 </div>
@@ -66,25 +63,25 @@
                     <p>Maths 1</p>
                     <p>BEE</p>
                     <p>Mechanics</p>
-                    <button class="Check_here">Check here</button>
+                    <a href="{{ url_for('main.course', semester_id=1) }}"><button class="Check_here">Check here</button></a>
                 </div>
                 <div class="course_info">
                     <h3>2nd Semester</h3>
                     <p>Maths 2</p>
                     <p>Physics 2</p>
                     <p>Engg. graphics</p>
-                    <button class="Check_here">Check here</button>
+                    <a href="{{ url_for('main.course', semester_id=2) }}"><button class="Check_here">Check here</button></a>
                 </div>
                 <div class="course_info">
                     <h3>3rd Semester</h3>
                     <p>Maths 3</p>
                     <p>Data Structures</p>
-                    <button class="Check_here">Check here</button>
+                    <a href="{{ url_for('main.course', semester_id=3) }}"><button class="Check_here">Check here</button></a>
                 </div>
                 <div class="course_info">
                     <h3>4th Semester</h3>
                     <p>Maths 4</p>
-                    <button class="Check_here">Check here</button>
+                    <a href="{{ url_for('main.course', semester_id=4) }}"><button class="Check_here">Check here</button></a>
                 </div>
             </div>
         </section>
@@ -98,7 +95,6 @@
                 <h3>Get Questions ?</h3>
                 <li>How can I register for a class?</li>
                 <p> Just click on the “Register Now” button and fill the simple form. Welcome aboard!</p>
-                
             </div>
             <div>
                 <h3>FAQs</h3>

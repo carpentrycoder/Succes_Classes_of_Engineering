@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses of Success</title>
+    <link href="{{ url_for('static', filename='css/course.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/3w0wgHR1/android-chrome-192x192.png" type="image/png">
+    <!-- Add Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('main.index') }}">
+            <h3>Success Classes of Engineering</h3>
+        </a>
+        <nav>
+            <a href="{{ url_for('main.about') }}">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Semester {{ semester_id }} Subjects</h2>
+        <div class="options">
+            <div class="offline">
+                <p>Our Offline Package</p>
+                <div class="subjects">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for course in offline_courses %}
+                                <tr>
+                                    <td>{{ course['Subjects'] }}</td>
+                                    <td>{{ course['Price'] }}</td>
+                                </tr>
+                                
+                            {% endfor %}
+                            <td>Total</td>
+                            <td>Amount</td>
+                        </tbody>
+                    </table>
+                    <a href="" class="check_here"><button class="buy">To Access This Visit Our Classes </button></a>
+
+                </div>
+            </div>
+            <div class="online">
+                <p>Our Online Package</p>
+                <div class="subjects">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for course in online_courses %}
+                                <tr>
+                                    <td>{{ course['Subjects'] }}</td>
+                                    <td>{{ course['Price'] }}</td>
+                                </tr>
+                            {% endfor %}
+                            <td>Total</td>
+                            <td>Amount</td>
+                        </tbody>
+                    </table>
+                    <a href="" class="check_here"><button class="buy">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Success Classes of Engineering. All rights reserved.</p>
+        <p class="sutar">Developed by Sutar</p>
+    </footer>
+</body>
+</html>

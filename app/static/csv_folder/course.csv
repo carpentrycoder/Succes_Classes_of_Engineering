@@ -1,0 +1,19 @@
+semester,semester_id,Course_Type,Subjects,Price
+1,1,Online,Maths 1,100
+1,1,Online,BEE,120
+1,1,Online,Mechanics,110
+1,1,Offline,Maths 1,150
+1,1,Offline,BEE,170
+1,1,Offline,Mechanics,160
+2,2,Online,Maths 2,100
+2,2,Online,Physics 2,120
+2,2,Online,Engg. graphics,110
+2,2,Offline,Maths 2,150
+2,2,Offline,Physics 2,170
+2,2,Offline,Engg. graphics,160
+3,3,Online,Maths 3,100
+3,3,Online,Data Structures,120
+3,3,Offline,Maths 3,150
+3,3,Offline,Data Structures,160
+4,4,Online,Maths 4,100
+4,4,Offline,Maths 4,150

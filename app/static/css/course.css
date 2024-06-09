@@ -1,0 +1,171 @@
+/* Basic styling for body */
+body {
+    font-family: "League Spartan", sans-serif;
+    background-color: #5badaa;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px; /* added padding for better spacing */
+    background-color: #1E3B41;
+}
+
+header h3 {
+    font-size: 22px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.container h2 {
+    color: #003d33;
+    padding: 10px;
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly; /* Adjusts the space between items */
+    align-items: flex-start; /* Aligns items vertically (top) */
+    flex-wrap: wrap; /* Added to wrap items on smaller screens */
+    padding: 20px;
+}
+
+.offline, .online {
+    background: #2F8C71;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 45%; /* Flex properties for responsive layout */
+    max-width: 45%; /* Ensure it does not exceed 45% of the width */
+}
+
+.options p {
+    font-size: 30px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.subjects {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.subjects table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 12px;
+}
+
+.subjects th, .subjects td {
+    border: 1px solid #fff;
+    padding: 14px;
+    text-align: left;
+    font-size: xx-large;
+}
+
+.subjects td {
+    padding-left: 20px;
+}
+
+.subjects th {
+    background-color: #1E3B41;
+}
+
+/* CSS for button with hover effect */
+.buy {
+    background-color: #085b44; /* Button background color */
+    border: none; /* Remove button border */
+    color: white; /* Button text color */
+    padding: 15px 32px; /* Button padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline block */
+    font-size: 20px; /* Button font size */
+    margin: 15px 2px; /* Button margin */
+    cursor: pointer; /* Add pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition-duration: 0.4s; /* Smooth transition */
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    /* Hover effect */
+}
+
+.buy:hover {
+    background-color: #C1BAC1; /* Change background color on hover */
+    color: #080808; /* Change text color on hover */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #003d33;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    header h3 {
+        font-size: 18px;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: medium;
+    }
+
+    .options p {
+        font-size: 24px;
+    }
+
+    .offline, .online {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 5px 0;
+        font-size: small;
+    }
+
+    .options p {
+        font-size: 20px;
+    }
+}

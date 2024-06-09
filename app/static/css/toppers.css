@@ -76,8 +76,8 @@ header nav a {
 
 .achiever-card p {
     margin: 0;
-    font-size: 20px; /* adjusted font size for readability */
-    font-weight: 300;
+    font-size: large; /* adjusted font size for readability */
+    font-weight: bold;
     color: black;
     padding-bottom: 10px;
 }
@@ -88,10 +88,12 @@ header nav a {
 }
 
 .achiever-card .pointer {
-    font-size: 18px; /* adjusted font size for readability */
-    font-weight: 800;
+    font-size: large;
+    font-weight: bold;
     color: black;
 }
+
+
 
 footer {
     text-align: center;
