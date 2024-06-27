@@ -40,10 +40,17 @@ header nav a {
 }
 
 .achievers h2 {
-    font-size: 30px;
+    font-size: 50px;
     color: black;
     text-decoration: underline;
     text-align: center; /* centered heading */
+}
+
+.achievers h4 {
+    font-size: 30px; /* adjusted font size */
+    color: black; /* changed color for better readability */
+    text-align: center; /* centered subheading */
+    margin-bottom: 30px; /* added margin for spacing */
 }
 
 .grid {
@@ -93,8 +100,6 @@ header nav a {
     color: black;
 }
 
-
-
 footer {
     text-align: center;
     padding: 20px 0;
@@ -115,6 +120,11 @@ footer {
         font-size: 24px;
     }
 
+    .achievers h4 {
+        font-size: 18px; /* adjusted font size */
+        margin-bottom: 20px; /* adjusted margin */
+    }
+
     .achiever-card {
         max-width: 100%; /* full width on small screens */
         margin: 0 auto 20px; /* center cards on small screens */
@@ -132,6 +142,11 @@ footer {
 
     .achievers h2 {
         font-size: 35px;
+    }
+
+    .achievers h4 {
+        font-size: 16px; /* adjusted font size */
+        margin-bottom: 15px; /* adjusted margin */
     }
 
     .achiever-card p {
