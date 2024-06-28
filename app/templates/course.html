@@ -41,10 +41,10 @@
                                     <td>{{ course['Subjects'] }}</td>
                                     <td>{{ course['Price'] }}</td>
                                 </tr>
-                                
                             {% endfor %}
                             <td>Total</td>
-                            <td>Amount</td>
+                            <td>{{total_offline}}</td>
+                            <td></td>
                         </tbody>
                     </table>
                     <a href="" class="check_here"><button class="buy">To Access This Visit Our Classes </button></a>
@@ -69,7 +69,7 @@
                                 </tr>
                             {% endfor %}
                             <td>Total</td>
-                            <td>Amount</td>
+                            <td>{{total_online}}</td>
                         </tbody>
                     </table>
                     <a href="" class="check_here"><button class="buy">Buy Now</button></a>

@@ -21,6 +21,16 @@ def index():
 def about():
     return render_template('about.html')
 
+
+def calculate_total_price(courses):
+    total = sum(float(course['Price']) for course in courses)
+    if(course==0):
+        return "Free"
+    else:
+        return total
+    
+    
+
 @bp.route('/course')
 def course():
     semester_id = request.args.get('semester_id')
@@ -28,8 +38,10 @@ def course():
     
     online_courses = [course for course in courses if course['semester_id'] == semester_id and course['Course_Type'] == 'Online']
     offline_courses = [course for course in courses if course['semester_id'] == semester_id and course['Course_Type'] == 'Offline']
+    total_online = calculate_total_price(online_courses)
+    total_offline = calculate_total_price(offline_courses)
     
-    return render_template('course.html', semester_id=semester_id, online_courses=online_courses, offline_courses=offline_courses)
+    return render_template('course.html', semester_id=semester_id, online_courses=online_courses, offline_courses=offline_courses,total_online=total_online,total_offline=total_offline)
 
 @bp.route('/toppers')
 def toppers():
