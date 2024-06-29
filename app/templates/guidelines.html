@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Classes of Engineering</title>
+    <link href="{{ url_for('static', filename='css/guideline.css') }}" rel="stylesheet">
+    <link href="/static/css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.postimg.cc/3w0wgHR1/android-chrome-192x192.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('main.index') }}">
+            <h3>Success Classes of Engineering</h3>
+        </a>
+        <nav>
+            <a href="{{ url_for('main.about') }}">Contact Us</a>
+        </nav>
+    </header>
+<div class="whole">
+    <div class="offline">
+        <p>Your Selected Course</p>
+        <div class="subjects">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for course in online_courses %}
+                        <tr>
+                            <td>{{ course['Subjects'] }}</td>
+                            <td>₹ {{ course['Price'] }}/-</td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                        <td>Total</td>
+                        <td>₹ {{ total_online }}/-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="guidelines" id="Online">
+        <div class="container">
+            <div class="steps">
+                <h1>Guidelines to Join Classes</h1>
+                <ol>
+                    <li>
+                        <p>Install Our Class App</p>
+                        <a href="https://play.google.com/store/apps/details?id=co.nick.ylswo&pcampaignid=web_share">App Link : Success Classes of Engineering</a>
+                        <img src="https://i.postimg.cc/yYftbqbX/QR-Code-1719662073.png" alt="QR Code">
+                    </li>
+                    <li>After installing our app</li>
+                    <li>Contact us at this number: 9321303556</li>
+                    <li>Enquire about the course you want</li>
+                    <li>Follow the instructions provided by the contact (9321303556)</li>
+                    <li>Make the payment and you will receive a receipt and access to your course</li>
+                    <li>NOTE: Our online lectures are only provided on mobile devices because we face piracy issues with laptops and desktops</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <p>&copy; 2024 Success Classes of Engineering. All rights reserved.</p>
+        <p class="sutar">Developed by Sutar</p>
+    </footer>
+</body>
+</html>

@@ -1,22 +1,22 @@
 semester,semester_id,Course_Type,Subjects,Price
-1,1,Online,Maths 1,5000
-1,1,Online,BEE,5000
-1,1,Online,Mechanics,5000
+1,1,Online,Maths 1,5333.33
+1,1,Online,BEE,5333.33
+1,1,Online,Mechanics,5333.33
 1,1,Offline,Maths 1,9500
 1,1,Offline,BEE,9500
 1,1,Offline,Mechanics,9500
-2,2,Online,Maths 2,5000
-2,2,Online,C-Programming,5000
-2,2,Online,Engg. graphics,5000
+2,2,Online,Maths 2,5333.33
+2,2,Online,C-Programming,5333.33
+2,2,Online,Engg. graphics,5333.33
 2,2,Offline,Maths 2,9500
 2,2,Offline,C-Programming,9500
 2,2,Offline,Engg. graphics,9500
-3,3,Online,Maths 3,5000
-3,3,Online,Data Structures,5000
+3,3,Online,Maths 3,5333.33
+3,3,Online,Data Structures,5333.33
 3,3,Offline,Maths 3,9500
 3,3,Offline,Data Structures,9500
-4,4,Online,Maths 4,5000
-4,4,Offline,Maths 4,5000
+4,4,Online,Maths 4,5333.33
+4,4,Offline,Maths 4,5333.33
 1,1,Offline,Physics 1,0
 1,1,Offline,Chemistry1,0
 2,2,Offline,Physics 2,0
@@ -25,3 +25,4 @@ semester,semester_id,Course_Type,Subjects,Price
 1,1,Online,Chemistry1,0
 2,2,Online,Physics 2,0
 2,2,Online,Chemistry2,0
+Crash  Course,5,Online,Maths 2 ,2700

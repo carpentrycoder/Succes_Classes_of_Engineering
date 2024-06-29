@@ -21,6 +21,20 @@ def index():
 def about():
     return render_template('about.html')
 
+@bp.route('/guidelines')
+def guidelines():
+    semester_id = request.args.get('semester_id')
+    if not semester_id:
+        return "Semester ID not provided", 400
+
+    courses = read_csv_file('course.csv')
+    online_courses = [course for course in courses if course['semester_id'] == semester_id and course['Course_Type'] == 'Online']
+    offline_courses = [course for course in courses if course['semester_id'] == semester_id and course['Course_Type'] == 'Offline']
+    total_online = calculate_total_price(online_courses)
+    total_offline = calculate_total_price(offline_courses)
+
+    return render_template('guidelines.html', semester_id=semester_id, online_courses=online_courses, total_online=total_online )
+
 
 def calculate_total_price(courses):
     total = sum(float(course['Price']) for course in courses)
@@ -30,7 +44,6 @@ def calculate_total_price(courses):
         return total
     
     
-
 @bp.route('/course')
 def course():
     semester_id = request.args.get('semester_id')

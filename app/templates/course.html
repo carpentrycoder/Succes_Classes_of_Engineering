@@ -39,15 +39,15 @@
                             {% for course in offline_courses %}
                                 <tr>
                                     <td>{{ course['Subjects'] }}</td>
-                                    <td>{{ course['Price'] }}</td>
+                                    <td>₹ {{ course['Price'] }}/-</td>
                                 </tr>
                             {% endfor %}
                             <td>Total</td>
-                            <td>{{total_offline}}</td>
-                            <td></td>
+                            <td>₹ {{total_offline}}/-</td>
+                            
                         </tbody>
                     </table>
-                    <a href="" class="check_here"><button class="buy">To Access This Visit Our Classes </button></a>
+                    <a href="" class="check_here"><button class="buy" id="visit">To Access This Visit Our Classes </button></a>
 
                 </div>
             </div>
@@ -65,14 +65,16 @@
                             {% for course in online_courses %}
                                 <tr>
                                     <td>{{ course['Subjects'] }}</td>
-                                    <td>{{ course['Price'] }}</td>
+                                    <td>₹ {{ course['Price'] }}/-</td>
                                 </tr>
                             {% endfor %}
                             <td>Total</td>
-                            <td>{{total_online}}</td>
+                            <td>₹ {{total_online}}/-</td>
                         </tbody>
                     </table>
-                    <a href="" class="check_here"><button class="buy">Buy Now</button></a>
+                    <a href="{{ url_for('main.guidelines', semester_id=semester_id) }}" class="check_here">
+                        <button class="buy">Check Here</button>
+                    </a>
                 </div>
             </div>
         </div>
