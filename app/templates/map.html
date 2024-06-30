@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Success Classes of Engineering</title>
+        <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+        <link href="/static/css/index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://i.postimg.cc/3w0wgHR1/android-chrome-192x192.png" type="image/png">
+    </head>
+<body>
+    <header>
+        <a href="{{ url_for('main.index')  }}">
+            <h3>Success Classes of Engineering</h3>
+        </a>
+        <nav>
+            <a href="{{ url_for('main.about') }}">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="main">
+    <div class="phone">Contact Us on this Number
+        <p></p>
+        <p class="numbers">9321303556</p>
+        <p class="numbers">7021765781</p>
+    </div>
+    <div class="address">
+        <p>
+        </p>
+        <p class="location-description">Our classes are conveniently located at the following address:</p>
+        <p></p>
+        <p class="location-address">2nd Floor, Aai building, Kelkar Rd, above Tanishq Jewellery Shop, Ramnagar, Dombivli East, Dombivli, Maharashtra 421201</p>
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470.94177154623196!2d73.086586!3d19.215538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf8ef903c863%3A0x5d0029fa4c66147c!2sSuccess%20Classes%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1719745081403!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Success Classes of Engineering. All rights reserved.</p>
+        <p class="sutar">Developed by Sutar</p>
+    </footer>
+</body>
+</html>

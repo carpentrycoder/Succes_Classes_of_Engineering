@@ -576,3 +576,171 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+
+/*only map.html css */
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #1E3B41; /* Optional: to provide a background color */
+    border-radius: 10px; /* Optional: to provide rounded corners */
+    margin: 20px auto; /* Center the map and provide vertical margin */
+    padding-left: 20px; /* Add padding to the left */
+    padding-right: 20px; /* Add padding to the right */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 20px; /* Offset iframe by the padding amount */
+    width: calc(100% - 40px); /* Reduce width by the padding amount */
+    height: 100%;
+    border: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .map-container {
+        padding-bottom: 75%; /* Adjust aspect ratio for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        padding-bottom: 100%; /* Adjust aspect ratio for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        padding-bottom: 125%; /* Adjust aspect ratio for extra small screens */
+    }
+}
+
+.map-container, .phone, .address {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for map */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #1E3B41; /* Optional: to provide a background color */
+    border-radius: 10px; /* Optional: to provide rounded corners */
+    margin: 20px auto; /* Center the element and provide vertical margin */
+    padding-left: 20px; /* Add padding to the left */
+    padding-right: 20px; /* Add padding to the right */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.map-container iframe,
+.phone iframe,
+.address iframe {
+    position: absolute;
+    top: 0;
+    left: 20px; /* Offset iframe by the padding amount */
+    width: calc(100% - 40px); /* Reduce width by the padding amount */
+    height: 100%;
+    border: 0;
+}
+
+.numbers,address{
+    padding-left: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .map-container,
+    .phone,
+    .address {
+        padding-bottom: 75%; /* Adjust aspect ratio for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container,
+    .phone,
+    .address {
+        padding-bottom: 100%; /* Adjust aspect ratio for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container,
+    .phone,
+    .address {
+        padding-bottom: 125%; /* Adjust aspect ratio for extra small screens */
+    }
+}
+
+
+/* Base styles */
+/* Base styles */
+.phone, .address {
+    background-color: #18766A; /* Matches the guidelines background color */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+.phone {
+    height: 120px;
+}
+
+.address {
+    height: 170px;
+}
+
+.numbers, .location-description, .location-address {
+    margin: 5px 0;
+}
+
+.numbers {
+    font-size: 22px;
+}
+
+.location-description {
+    font-size: 22px;
+}
+
+.location-address {
+    font-size: 22px;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .phone, .address {
+        padding: 8px;
+    }
+
+    .numbers, .location-description {
+        font-size: 20px;
+    }
+
+    .location-address {
+        font-size: 20px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .phone, .address {
+        padding: 5px;
+    }
+
+    .numbers, .location-description {
+        font-size: 20px;
+    }
+
+    .location-address {
+        font-size: 20px;
+    }
+}
+

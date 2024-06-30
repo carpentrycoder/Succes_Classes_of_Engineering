@@ -21,6 +21,10 @@ def index():
 def about():
     return render_template('about.html')
 
+@bp.route('/map')
+def map():
+    return render_template('map.html')
+
 @bp.route('/guidelines')
 def guidelines():
     semester_id = request.args.get('semester_id')
