@@ -23,7 +23,8 @@
         </nav>
     </header>
     <div class="container">
-        <h2>Semester {{ semester_id }} Subjects</h2>
+        <h2> Your Selected Subjects</h2>
+        <p class="notice">"Notice: If either the online or offline option is empty, then the course is not available in that mode."</p>
         <div class="options">
             <div class="offline">
                 <p>Our Offline Package</p>
@@ -44,11 +45,9 @@
                             {% endfor %}
                             <td>Total</td>
                             <td>₹ {{total_offline}}/-</td>
-                            
                         </tbody>
                     </table>
                     <a href="{{url_for('main.map')}}" class="check_here"><button class="buy" id="visit">To Access This Visit Our Classes </button></a>
-
                 </div>
             </div>
             <div class="online">

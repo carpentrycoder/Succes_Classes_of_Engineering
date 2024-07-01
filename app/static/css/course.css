@@ -47,6 +47,13 @@ header nav a {
     align-items: flex-start; /* Aligns items vertically (top) */
     flex-wrap: wrap; /* Added to wrap items on smaller screens */
     padding: 20px;
+    
+}
+
+.notice{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .offline, .online {

@@ -93,36 +93,15 @@
         <section class="courses">
             <h2>Our Courses</h2>
             <div class="grid">
-                <div class="course_info">
-                    <h3>1st Semester</h3>
-                    <p>Maths 1</p>
-                    <p>BEE</p>
-                    <p>Mechanics</p>
-                    <a href="{{ url_for('main.course', semester_id=1) }}"><button class="Check_here">Check here</button></a>
-                </div>
-                <div class="course_info">
-                    <h3>2nd Semester</h3>
-                    <p>Maths 2</p>
-                    <p>Physics 2</p>
-                    <p>Engg. graphics</p>
-                    <a href="{{ url_for('main.course', semester_id=2) }}"><button class="Check_here">Check here</button></a>
-                </div>
-                <div class="course_info">
-                    <h3>3rd Semester</h3>
-                    <p>Maths 3</p>
-                    <p>Data Structures</p>
-                    <a href="{{ url_for('main.course', semester_id=3) }}"><button class="Check_here">Check here</button></a>
-                </div>
-                <div class="course_info">
-                    <h3>4th Semester</h3>
-                    <p>Maths 4</p>
-                    <a href="{{ url_for('main.course', semester_id=4) }}"><button class="Check_here">Check here</button></a>
-                </div>
-                <div class="course_info">
-                    <h3> Crash Course</h3>
-                    <p>Maths 2 </p>
-                    <a href="{{ url_for('main.course', semester_id=5) }}"><button class="Check_here">Check here</button></a>
-                </div>
+                {% for semester, subjects in semester_data.items() %}
+                    <div class="course_info">
+                        <h3>{{ semester }} </h3>
+                        {% for subject in subjects %}
+                            <p>{{ subject }}</p>
+                        {% endfor %}
+                        <a href="{{ url_for('main.course', semester_id=loop.index) }}"><button class="Check_here">Check here</button></a>
+                    </div>
+                {% endfor %}
             </div>
         </section>
         <section class="join-us">

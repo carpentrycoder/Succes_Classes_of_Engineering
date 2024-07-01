@@ -14,8 +14,22 @@ def read_csv_file(filename):
 
 @bp.route('/')
 def index():
-    data = read_csv_file('students.csv')[0:3]  #1st 3 students
-    return render_template('index.html', toppers=data)
+    # Read students data
+    students = read_csv_file('students.csv')[0:3]  # 1st 3 students
+
+    # Read courses data
+    courses = read_csv_file('course.csv')
+    semester_data = {}
+
+    for course in courses:
+        semester = course['semester']
+        subject = course['Subjects']
+        if semester not in semester_data:
+            semester_data[semester] = []
+        if subject not in semester_data[semester]:
+            semester_data[semester].append(subject)
+
+    return render_template('index.html', toppers=students, semester_data=semester_data)
 
 @bp.route('/about')
 def about():
@@ -64,3 +78,19 @@ def course():
 def toppers():
     data = read_csv_file('students.csv')  # Ensure 'students.csv' is the correct filename
     return render_template('toppers.html', toppers=data)
+
+@bp.route('/')
+def semesters():
+    courses = read_csv_file('course.csv')
+    semester_data = {}
+
+    for course in courses:
+        semester = course['semester']
+        subject = course['Subjects']
+        if semester not in semester_data:
+            semester_data[semester] = []
+        if subject not in semester_data[semester]:
+            semester_data[semester].append(subject)
+
+    return render_template('index.html', semester_data=semester_data)
+
